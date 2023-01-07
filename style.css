@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 400px;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  width: 300px;
+  padding: 10px 14px;
+}
+.picker {
+  border-radius: 5px;
+  background-color: #3498db;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.picker button {
+  display: block;
+  padding: 10px 16px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.colors {
+  padding: 14px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 12px;
+}
+.colors .color {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.box-color {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 5px;
+}
+.colors .color p {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.wrapper h3 {
+  text-align: right;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  margin-block: 10px;
+}
